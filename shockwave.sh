@@ -1,3 +1,6 @@
+# This is a small helper script for launching the Shockwave mod for generals on
+# linux. The main generals game works with wine, but the Shockwave launcher does
+# not (idk why).
 cd "$(dirname "$(realpath "$0")")"
 
 DATA=$(sed 's/\r//g' < Shockwave_Lnchr.dat | sed 's/ //g')
